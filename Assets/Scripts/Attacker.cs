@@ -16,4 +16,8 @@ public class Attacker : MonoBehaviour
   {
     transform.Translate(Vector2.left * Time.deltaTime * walkSpeed);
   }
+
+  public void SetMoveSpeed(float speed) {
+    walkSpeed = speed;
+  }
 }
