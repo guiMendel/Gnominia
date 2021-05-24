@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: 32643e143de65b6499dc7280cec24081
+guid: 072d7de9a3e2a084e8161359ac370a0f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6431550877978275648
-    second: flor-malvada-spritesheet_0
+      213: -5523479468329143396
+    second: gnome-pick_0
   - first:
-      213: 4054229901152211425
-    second: flor-malvada-spritesheet_1
+      213: 6740059636755207180
+    second: gnome-pick_1
   - first:
-      213: 4324924878182797578
-    second: flor-malvada-spritesheet_2
+      213: 7478559531231583020
+    second: gnome-pick_2
   - first:
-      213: 8936403322491703585
-    second: flor-malvada-spritesheet_3
+      213: 6962568574470323736
+    second: gnome-pick_3
   - first:
-      213: 2945944778629344541
-    second: flor-malvada-spritesheet_4
+      213: -3780821447454299883
+    second: gnome-pick_4
   - first:
-      213: -8214462569327647799
-    second: flor-malvada-spritesheet_5
+      213: -1781241608512807021
+    second: gnome-pick_5
   - first:
-      213: 4427596125686826417
-    second: flor-malvada-spritesheet_6
+      213: 7759682778877013946
+    second: gnome-pick_6
   - first:
-      213: -3856951935516594073
-    second: flor-malvada-spritesheet_7
+      213: -1864032675923837755
+    second: gnome-pick_7
   - first:
-      213: 2480756453653863018
-    second: flor-malvada-spritesheet_8
+      213: 6313780516987749892
+    second: gnome-pick_8
   - first:
-      213: 8224789667853760356
-    second: flor-malvada-spritesheet_9
+      213: 1109507984513206506
+    second: gnome-pick_9
   - first:
-      213: -9064877649508828302
-    second: flor-malvada-spritesheet_10
+      213: -8322550937688085804
+    second: gnome-pick_10
   - first:
-      213: -869402768765239612
-    second: flor-malvada-spritesheet_11
+      213: -2041361787661726802
+    second: gnome-pick_11
   - first:
-      213: 2615900536583256956
-    second: flor-malvada-spritesheet_12
+      213: 4215491012174850144
+    second: gnome-pick_12
   - first:
-      213: 746075590613784957
-    second: flor-malvada-spritesheet_13
+      213: -388220142507390549
+    second: gnome-pick_13
   - first:
-      213: -8068700190725125815
-    second: flor-malvada-spritesheet_14
+      213: -4420609336478072221
+    second: gnome-pick_14
   - first:
-      213: 6566552131884585832
-    second: flor-malvada-spritesheet_15
+      213: 5923511773563435781
+    second: gnome-pick_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -91,10 +91,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 190
+  spritePixelsToUnits: 65
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -151,7 +151,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_0
+      name: gnome-pick_0
       rect:
         serializedVersion: 2
         x: 0
@@ -165,14 +165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c0d0436d8a8eb6a0800000000000000
-      internalID: -6431550877978275648
+      spriteID: c93f31e20b8a853b0800000000000000
+      internalID: -5523479468329143396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_1
+      name: gnome-pick_1
       rect:
         serializedVersion: 2
         x: 64
@@ -186,14 +186,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e1d1f76d94834830800000000000000
-      internalID: 4054229901152211425
+      spriteID: c041ebd7780898d50800000000000000
+      internalID: 6740059636755207180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_2
+      name: gnome-pick_2
       rect:
         serializedVersion: 2
         x: 128
@@ -207,14 +207,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a01d5542348350c30800000000000000
-      internalID: 4324924878182797578
+      spriteID: c2b9ba2454e29c760800000000000000
+      internalID: 7478559531231583020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_3
+      name: gnome-pick_3
       rect:
         serializedVersion: 2
         x: 0
@@ -228,14 +228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1211db6897b740c70800000000000000
-      internalID: 8936403322491703585
+      spriteID: 81ef99daa3300a060800000000000000
+      internalID: 6962568574470323736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_4
+      name: gnome-pick_4
       rect:
         serializedVersion: 2
         x: 64
@@ -249,14 +249,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1d6e1afa2912e820800000000000000
-      internalID: 2945944778629344541
+      spriteID: 519ee49dce2d78bc0800000000000000
+      internalID: -3780821447454299883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_5
+      name: gnome-pick_5
       rect:
         serializedVersion: 2
         x: 128
@@ -270,14 +270,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c3ab76b0dd500e80800000000000000
-      internalID: -8214462569327647799
+      spriteID: 39fd279c132c747e0800000000000000
+      internalID: -1781241608512807021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_6
+      name: gnome-pick_6
       rect:
         serializedVersion: 2
         x: 0
@@ -291,14 +291,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b58578c73bf17d30800000000000000
-      internalID: 4427596125686826417
+      spriteID: abf2ea4ff5eefab60800000000000000
+      internalID: 7759682778877013946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_7
+      name: gnome-pick_7
       rect:
         serializedVersion: 2
         x: 64
@@ -312,14 +312,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76037cf46aa597ac0800000000000000
-      internalID: -3856951935516594073
+      spriteID: 5ccb6d54820a126e0800000000000000
+      internalID: -1864032675923837755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_8
+      name: gnome-pick_8
       rect:
         serializedVersion: 2
         x: 128
@@ -333,14 +333,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6adb4ad9da6d6220800000000000000
-      internalID: 2480756453653863018
+      spriteID: 40646d8aded0f9750800000000000000
+      internalID: 6313780516987749892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_9
+      name: gnome-pick_9
       rect:
         serializedVersion: 2
         x: 0
@@ -354,14 +354,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 467f9b840a2542270800000000000000
-      internalID: 8224789667853760356
+      spriteID: ae88e5c22a3c56f00800000000000000
+      internalID: 1109507984513206506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_10
+      name: gnome-pick_10
       rect:
         serializedVersion: 2
         x: 64
@@ -375,14 +375,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27bf5a83ec5133280800000000000000
-      internalID: -9064877649508828302
+      spriteID: 4dae106540c508c80800000000000000
+      internalID: -8322550937688085804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_11
+      name: gnome-pick_11
       rect:
         serializedVersion: 2
         x: 128
@@ -396,14 +396,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ceb101c9c24fe3f0800000000000000
-      internalID: -869402768765239612
+      spriteID: eabcd5c0540aba3e0800000000000000
+      internalID: -2041361787661726802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_12
+      name: gnome-pick_12
       rect:
         serializedVersion: 2
         x: 0
@@ -417,14 +417,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7b7ccaadab8d4420800000000000000
-      internalID: 2615900536583256956
+      spriteID: 068a88eadbe608a30800000000000000
+      internalID: 4215491012174850144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_13
+      name: gnome-pick_13
       rect:
         serializedVersion: 2
         x: 64
@@ -438,14 +438,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d79df1afbc79a5a00800000000000000
-      internalID: 746075590613784957
+      spriteID: ba9023756d3cc9af0800000000000000
+      internalID: -388220142507390549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_14
+      name: gnome-pick_14
       rect:
         serializedVersion: 2
         x: 128
@@ -459,14 +459,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 949c3b42de7360090800000000000000
-      internalID: -8068700190725125815
+      spriteID: 3620378da37d6a2c0800000000000000
+      internalID: -4420609336478072221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_15
+      name: gnome-pick_15
       rect:
         serializedVersion: 2
         x: 0
@@ -480,8 +480,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86390147f54112b50800000000000000
-      internalID: 6566552131884585832
+      spriteID: 50bb71ee29a843250800000000000000
+      internalID: 5923511773563435781
       vertices: []
       indices: 
       edges: []

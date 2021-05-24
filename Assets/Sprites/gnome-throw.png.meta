@@ -1,55 +1,40 @@
 fileFormatVersion: 2
-guid: 32643e143de65b6499dc7280cec24081
+guid: 3c37fd425ec4d0547be0a804f437ddf7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6431550877978275648
-    second: flor-malvada-spritesheet_0
+      213: -5557416926398099932
+    second: gnome-throw_0
   - first:
-      213: 4054229901152211425
-    second: flor-malvada-spritesheet_1
+      213: 2129550856430251808
+    second: gnome-throw_1
   - first:
-      213: 4324924878182797578
-    second: flor-malvada-spritesheet_2
+      213: 6912371997402644079
+    second: gnome-throw_2
   - first:
-      213: 8936403322491703585
-    second: flor-malvada-spritesheet_3
+      213: -9014570611849192027
+    second: gnome-throw_3
   - first:
-      213: 2945944778629344541
-    second: flor-malvada-spritesheet_4
+      213: -7849086472211190605
+    second: gnome-throw_4
   - first:
-      213: -8214462569327647799
-    second: flor-malvada-spritesheet_5
+      213: -409024188455523415
+    second: gnome-throw_5
   - first:
-      213: 4427596125686826417
-    second: flor-malvada-spritesheet_6
+      213: -2720864303217276280
+    second: gnome-throw_6
   - first:
-      213: -3856951935516594073
-    second: flor-malvada-spritesheet_7
+      213: -6180506224918471456
+    second: gnome-throw_7
   - first:
-      213: 2480756453653863018
-    second: flor-malvada-spritesheet_8
+      213: -1149715897526939807
+    second: gnome-throw_8
   - first:
-      213: 8224789667853760356
-    second: flor-malvada-spritesheet_9
+      213: 7768904371592613277
+    second: gnome-throw_9
   - first:
-      213: -9064877649508828302
-    second: flor-malvada-spritesheet_10
-  - first:
-      213: -869402768765239612
-    second: flor-malvada-spritesheet_11
-  - first:
-      213: 2615900536583256956
-    second: flor-malvada-spritesheet_12
-  - first:
-      213: 746075590613784957
-    second: flor-malvada-spritesheet_13
-  - first:
-      213: -8068700190725125815
-    second: flor-malvada-spritesheet_14
-  - first:
-      213: 6566552131884585832
-    second: flor-malvada-spritesheet_15
+      213: 3910241025742533189
+    second: gnome-throw_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -91,10 +76,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 190
+  spritePixelsToUnits: 65
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,7 +101,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,7 +113,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -140,7 +125,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -151,133 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c0d0436d8a8eb6a0800000000000000
-      internalID: -6431550877978275648
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flor-malvada-spritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e1d1f76d94834830800000000000000
-      internalID: 4054229901152211425
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flor-malvada-spritesheet_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a01d5542348350c30800000000000000
-      internalID: 4324924878182797578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flor-malvada-spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1211db6897b740c70800000000000000
-      internalID: 8936403322491703585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flor-malvada-spritesheet_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1d6e1afa2912e820800000000000000
-      internalID: 2945944778629344541
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flor-malvada-spritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c3ab76b0dd500e80800000000000000
-      internalID: -8214462569327647799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flor-malvada-spritesheet_6
+      name: gnome-throw_0
       rect:
         serializedVersion: 2
         x: 0
@@ -291,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b58578c73bf17d30800000000000000
-      internalID: 4427596125686826417
+      spriteID: 42e4c49ffb610e2b0800000000000000
+      internalID: -5557416926398099932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_7
+      name: gnome-throw_1
       rect:
         serializedVersion: 2
         x: 64
@@ -312,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76037cf46aa597ac0800000000000000
-      internalID: -3856951935516594073
+      spriteID: 02f67a8983fad8d10800000000000000
+      internalID: 2129550856430251808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_8
+      name: gnome-throw_2
       rect:
         serializedVersion: 2
         x: 128
@@ -333,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6adb4ad9da6d6220800000000000000
-      internalID: 2480756453653863018
+      spriteID: f6eba8455bdadef50800000000000000
+      internalID: 6912371997402644079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_9
+      name: gnome-throw_3
       rect:
         serializedVersion: 2
         x: 0
@@ -354,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 467f9b840a2542270800000000000000
-      internalID: 8224789667853760356
+      spriteID: 5ad9d0e2acfc5e280800000000000000
+      internalID: -9014570611849192027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_10
+      name: gnome-throw_4
       rect:
         serializedVersion: 2
         x: 64
@@ -375,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27bf5a83ec5133280800000000000000
-      internalID: -9064877649508828302
+      spriteID: 3bc27849071721390800000000000000
+      internalID: -7849086472211190605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_11
+      name: gnome-throw_5
       rect:
         serializedVersion: 2
         x: 128
@@ -396,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ceb101c9c24fe3f0800000000000000
-      internalID: -869402768765239612
+      spriteID: 9abe09eeaaad25af0800000000000000
+      internalID: -409024188455523415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_12
+      name: gnome-throw_6
       rect:
         serializedVersion: 2
         x: 0
@@ -417,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7b7ccaadab8d4420800000000000000
-      internalID: 2615900536583256956
+      spriteID: 88a81bcf45c8d3ad0800000000000000
+      internalID: -2720864303217276280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_13
+      name: gnome-throw_7
       rect:
         serializedVersion: 2
         x: 64
@@ -438,14 +297,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d79df1afbc79a5a00800000000000000
-      internalID: 746075590613784957
+      spriteID: 0ecd4ab855e6a3aa0800000000000000
+      internalID: -6180506224918471456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_14
+      name: gnome-throw_8
       rect:
         serializedVersion: 2
         x: 128
@@ -459,14 +318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 949c3b42de7360090800000000000000
-      internalID: -8068700190725125815
+      spriteID: 16f894f8b736b00f0800000000000000
+      internalID: -1149715897526939807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flor-malvada-spritesheet_15
+      name: gnome-throw_9
       rect:
         serializedVersion: 2
         x: 0
@@ -480,8 +339,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86390147f54112b50800000000000000
-      internalID: 6566552131884585832
+      spriteID: d9dc1c25d51b0db60800000000000000
+      internalID: 7768904371592613277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome-throw_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542fa8dde77f34630800000000000000
+      internalID: 3910241025742533189
       vertices: []
       indices: 
       edges: []
