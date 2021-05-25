@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class AttackerSpawner : MonoBehaviour
 {
   [SerializeField] float minSpawnTime = 1f;
   [SerializeField] float maxSpawnTime = 5f;

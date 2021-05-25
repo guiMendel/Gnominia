@@ -5,7 +5,7 @@ using UnityEngine;
 public class Attacker : MonoBehaviour
 {
   [SerializeField] float walkSpeed = 1f;
-  
+
   // When this attacker is spawned, applies this offset to his Y position
   [SerializeField] float rowOffset = 0.2f;
 
@@ -17,7 +17,8 @@ public class Attacker : MonoBehaviour
     transform.Translate(Vector2.left * Time.deltaTime * walkSpeed);
   }
 
-  public void SetMoveSpeed(float speed) {
+  public void SetMoveSpeed(float speed)
+  {
     walkSpeed = speed;
   }
 }

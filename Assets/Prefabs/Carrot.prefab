@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 250249119895722495}
   - component: {fileID: 6783724277573924343}
   - component: {fileID: -5415860020741869021}
-  m_Layer: 0
+  - component: {fileID: -3920655500916183527}
+  m_Layer: 6
   m_Name: Carrot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,6 +119,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
+  damage: 30
+  hitVFX: {fileID: 7105195559572412855, guid: 98cadd3a58852b2498ca4f48494b2a32, type: 3}
+  VFXDuration: 2
+  VFXRotation: {x: 0, y: 90, z: 0}
 --- !u!50 &-5415860020741869021
 Rigidbody2D:
   serializedVersion: 4
@@ -139,3 +144,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!70 &-3920655500916183527
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8251625610210797135}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0027948616, y: 0.0046576196}
+  m_Size: {x: 0.5577672, y: 0.101277605}
+  m_Direction: 1
