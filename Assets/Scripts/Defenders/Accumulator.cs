@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Accumulator : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  [SerializeField] int accumulationAmount = 1;
+  CurrencyManager currencyManager;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  private void Start()
+  {
+    currencyManager = FindObjectOfType<CurrencyManager>();
+  }
+
+  public void Accumulate()
+  {
+    currencyManager.UpdateBy(accumulationAmount);
+  }
 }

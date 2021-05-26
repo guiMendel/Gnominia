@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 
-public class Currency : MonoBehaviour
+public class CurrencyManager : MonoBehaviour
 {
   [SerializeField] int count = 3;
   TextMeshProUGUI textComponent;

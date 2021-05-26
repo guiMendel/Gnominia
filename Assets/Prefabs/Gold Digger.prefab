@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6243210618018058582}
   - component: {fileID: 8314232657939657730}
   - component: {fileID: 5194452404125527493}
+  - component: {fileID: 1450776930536772806}
+  - component: {fileID: 5691803508843016792}
   m_Layer: 0
   m_Name: Gold Digger
   m_TagString: Untagged
@@ -98,3 +100,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementOffset: {x: 0, y: 0}
   cost: 3
+--- !u!114 &1450776930536772806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7693875239123040451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b273b0f25f4bedf41920428feed9e830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accumulationAmount: 1
+--- !u!95 &5691803508843016792
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7693875239123040451}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2c596355cbc8aeb489c5f4150e505e5c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
