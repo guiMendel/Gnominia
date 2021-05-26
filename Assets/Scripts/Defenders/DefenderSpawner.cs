@@ -63,7 +63,7 @@ public class DefenderSpawner : MonoBehaviour
       // Discount defender cost
       currencyManager.UpdateBy(-defender.GetCost());
 
-      Instantiate(defender, position + defender.GetPlacementOffset(), Quaternion.identity);
+      Instantiate(defender, position, Quaternion.identity);
     }
     catch (InsufficientFundsException)
     {
