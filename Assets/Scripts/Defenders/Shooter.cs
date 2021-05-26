@@ -8,7 +8,8 @@ public class Shooter : MonoBehaviour
   [SerializeField] Transform launchPosition;
 
   public void Shoot() {
-    Instantiate(projectile, launchPosition.position, launchPosition.rotation);
+    Projectile instance = Instantiate(projectile, launchPosition.position, launchPosition.rotation) as Projectile;
+    instance.transform.parent = transform;
   }
   
 }

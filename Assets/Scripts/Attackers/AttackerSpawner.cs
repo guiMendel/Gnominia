@@ -7,8 +7,8 @@ public class AttackerSpawner : MonoBehaviour
 {
   // Amount of time the player has before plants start spawning
   [SerializeField] float startingSlack = 4f;
-  [SerializeField] float minSpawnTime = 1f;
-  [SerializeField] float maxSpawnTime = 5f;
+  [SerializeField] float minSpawnTime = 3f;
+  [SerializeField] float maxSpawnTime = 8f;
 
   // The enemy to be spawned
   [SerializeField] Attacker attackerPrefab;
@@ -43,21 +43,22 @@ public class AttackerSpawner : MonoBehaviour
 
   private void Spawn()
   {
-    Instantiate(
+    // Get a lane
+    Transform lane = GetRandomLane();
+    
+    // Create attacker
+    Attacker attacker = Instantiate(
       attackerPrefab,
-      GetSpawnPosition(attackerPrefab.GetRowOffset()),
+      lane.position,
       Quaternion.identity
-    );
+    ) as Attacker;
+
+    // Set it's parent
+    attacker.transform.parent = lane;
   }
 
-  private Vector3 GetSpawnPosition(float offset)
+  private Transform GetRandomLane()
   {
-    return new Vector3(
-      // Use X from spawner
-      transform.position.x,
-      // Pick a random row, apply offset
-      Random.Range(0, 5) + offset,
-      transform.position.y
-    );
+    return transform.Find("Lane " + Random.Range(0, 5));
   }
 }

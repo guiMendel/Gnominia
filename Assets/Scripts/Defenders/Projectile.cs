@@ -20,6 +20,7 @@ public class Projectile : MonoBehaviour
   private void OnTriggerEnter2D(Collider2D other)
   {
     // Apply hit if other is an attacker
+    Debug.Log(other);
     Attacker attacker = other.GetComponent<Attacker>();
     Health health = other.GetComponent<Health>();
 
