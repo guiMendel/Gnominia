@@ -5,19 +5,29 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
-  [SerializeField] Defender defender;
+  Defender defender;
+  DefenderButton defenderButton;
 
-  private void OnMouseDown() {
+  // Receive a defender prefab to be spawned on click, and it's button to deselect it
+  public void SelectDefender(Defender newDefender, DefenderButton newDefenderButton)
+  {
+    defender = newDefender;
+    defenderButton = newDefenderButton;
+  }
+
+  private void OnMouseDown()
+  {
     SpawnDefender(GetClickedSquare());
   }
 
-  private Vector2 GetClickedSquare() {
+  private Vector2 GetClickedSquare()
+  {
     Vector2 clickScreenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
     Vector2 clickPosition = Camera.main.ScreenToWorldPoint(clickScreenPosition);
 
     // Snap to one of the squares
     Vector2 clickSquare = SnapToSquares(clickPosition);
-    
+
     return clickSquare;
   }
 
@@ -28,6 +38,12 @@ public class DefenderSpawner : MonoBehaviour
 
   private void SpawnDefender(Vector2 position)
   {
+    if (!defender) return;
+
     Instantiate(defender, position + defender.GetPlacementOffset(), Quaternion.identity);
+
+    // Deselect defender
+    defender = null;
+    defenderButton.Deselect();
   }
 }

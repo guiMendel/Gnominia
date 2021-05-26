@@ -44,3 +44,9 @@ TagManager:
   - name: VFX
     uniqueID: 1451646433
     locked: 0
+  - name: Foreground
+    uniqueID: 2781072171
+    locked: 0
+  - name: UI
+    uniqueID: 4141952967
+    locked: 0
