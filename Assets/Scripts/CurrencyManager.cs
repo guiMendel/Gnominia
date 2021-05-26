@@ -23,10 +23,13 @@ public class CurrencyManager : MonoBehaviour
 
   public int UpdateBy(int amount)
   {
-    if (count + amount < 0) throw new InsufficientFundsException("Not enough currency!");
+    if (amount + count < 0) throw new InsufficientFundsException("Not enough currency!");
 
     count += amount;
     UpdateText();
     return count;
   }
+
+  // Indicates if there are enough funds for a certain amount
+  public bool Affords(int amount) { return count >= amount; }
 }

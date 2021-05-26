@@ -41,6 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Row 4
+    uniqueID: 4276124295
+    locked: 0
+  - name: Row 3
+    uniqueID: 2116358955
+    locked: 0
+  - name: Row 2
+    uniqueID: 4002322751
+    locked: 0
+  - name: Row 1
+    uniqueID: 2096813729
+    locked: 0
+  - name: Row 0
+    uniqueID: 3562972367
+    locked: 0
   - name: VFX
     uniqueID: 1451646433
     locked: 0

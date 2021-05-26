@@ -5,14 +5,32 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
+  // Selected defender
   Defender defender;
+
+  // Selected defender button
   DefenderButton defenderButton;
 
-  // Receive a defender prefab to be spawned on click, and it's button to deselect it
-  public void SelectDefender(Defender newDefender, DefenderButton newDefenderButton)
+  // Stored refs
+
+  // Reference to currency
+  CurrencyManager currencyManager;
+
+  private void Start()
   {
+    currencyManager = FindObjectOfType<CurrencyManager>();
+  }
+
+  // Attempts to select a defender prefab to be spawned on click, and it's button to deselect it
+  // Returns true if it was successfully selected
+  public bool SelectDefender(Defender newDefender, DefenderButton newDefenderButton)
+  {
+    if (!currencyManager.Affords(newDefender.GetCost())) return false;
+
     defender = newDefender;
     defenderButton = newDefenderButton;
+
+    return true;
   }
 
   private void OnMouseDown()
@@ -40,7 +58,17 @@ public class DefenderSpawner : MonoBehaviour
   {
     if (!defender) return;
 
-    Instantiate(defender, position + defender.GetPlacementOffset(), Quaternion.identity);
+    try
+    {
+      // Discount defender cost
+      currencyManager.UpdateBy(-defender.GetCost());
+
+      Instantiate(defender, position + defender.GetPlacementOffset(), Quaternion.identity);
+    }
+    catch (InsufficientFundsException)
+    {
+      Debug.LogError("Attempted to place defender without enough funds");
+    }
 
     // Deselect defender
     defender = null;
