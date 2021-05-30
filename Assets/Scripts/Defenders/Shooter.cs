@@ -39,7 +39,6 @@ public class Shooter : MonoBehaviour
 
   public void Shoot() {
     Projectile instance = Instantiate(projectile, launchPosition.position, launchPosition.rotation) as Projectile;
-    instance.transform.parent = transform;
   }
   
 }

@@ -17,10 +17,18 @@ public class Projectile : MonoBehaviour
     GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
   }
 
+  private void Update()
+  {
+    Debug.Log(
+      GetComponent<Rigidbody2D>().velocity
+    );
+  }
+
   private void OnTriggerEnter2D(Collider2D other)
   {
-    // Apply hit if other is an attacker
     Debug.Log(other);
+
+    // Apply hit if other is an attacker
     Attacker attacker = other.GetComponent<Attacker>();
     Health health = other.GetComponent<Health>();
 

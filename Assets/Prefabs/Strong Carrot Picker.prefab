@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 139802974568382413}
   - component: {fileID: 139802974568382415}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,8 @@ GameObject:
   - component: {fileID: 139802976357143471}
   - component: {fileID: 557921061908498229}
   - component: {fileID: 541303949}
-  m_Layer: 0
+  - component: {fileID: -1159204300048847143}
+  m_Layer: 8
   m_Name: Strong Carrot Picker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,6 +192,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &-1159204300048847143
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139802976357143468}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &139802976445009243
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,7 +223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 139802976445009242}
   - component: {fileID: 139802976445009317}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Launch Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
