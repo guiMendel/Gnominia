@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 557921061908498229}
   - component: {fileID: 541303949}
   - component: {fileID: -1159204300048847143}
+  - component: {fileID: 5139773528603923142}
   m_Layer: 8
   m_Name: Strong Carrot Picker
   m_TagString: Untagged
@@ -213,6 +214,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5139773528603923142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139802976357143468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd4557da9f5c6441bfe4b93209a3f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 120
+  deathVFX: {fileID: 7105195559572412855, guid: 4f64bbbb66b383a4fb4a90566671b418, type: 3}
+  VFXDuration: 4
 --- !u!1 &139802976445009243
 GameObject:
   m_ObjectHideFlags: 0

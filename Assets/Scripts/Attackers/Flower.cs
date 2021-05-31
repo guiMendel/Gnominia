@@ -9,7 +9,7 @@ public class Flower : MonoBehaviour
     // Attack if is defender
     if (other.GetComponent<Defender>())
     {
-      GetComponent<Attacker>().Attack(other.gameObject);
+      GetComponent<Attacker>().StartAttacking(other.gameObject);
     }
   }
 }

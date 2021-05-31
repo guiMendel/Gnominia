@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 5691803508843016792}
   - component: {fileID: -944564034428564766}
   - component: {fileID: 3101659185185821764}
+  - component: {fileID: 1049056531219180491}
   m_Layer: 8
   m_Name: Gold Digger
   m_TagString: Untagged
@@ -213,3 +214,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1049056531219180491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7693875239123040451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd4557da9f5c6441bfe4b93209a3f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 80
+  deathVFX: {fileID: 7105195559572412855, guid: 4f64bbbb66b383a4fb4a90566671b418, type: 3}
+  VFXDuration: 4

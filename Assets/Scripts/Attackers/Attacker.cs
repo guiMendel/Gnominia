@@ -9,12 +9,16 @@ public class Attacker : MonoBehaviour
   // When this attacker is spawned, applies this offset to his Y position
   [SerializeField] float rowOffset = 0.2f;
 
+  // Damage dealt on each strike
+  [SerializeField] int damage = 20;
+
   GameObject currentTarget;
   float defaultWalkSpeed;
 
   public float GetRowOffset() { return rowOffset; }
 
-  private void Awake() {
+  private void Awake()
+  {
     defaultWalkSpeed = walkSpeed;
   }
 
@@ -24,11 +28,21 @@ public class Attacker : MonoBehaviour
     transform.Translate(Vector2.left * Time.deltaTime * walkSpeed);
   }
 
-  public void Attack(GameObject target) {
+  public void StartAttacking(GameObject target)
+  {
     // Start animation
     GetComponent<Animator>().SetBool("IsAttacking", true);
 
     currentTarget = target;
+  }
+
+  public void StrikeCurrentTarget()
+  {
+    if (!currentTarget) return;
+
+    Health targetHealth = currentTarget.GetComponent<Health>();
+    
+    if (targetHealth) targetHealth.TakeDamage(damage);
   }
 
   public void SetMoveSpeed(float speed)
