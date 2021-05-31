@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3275204754321750933}
   - component: {fileID: -3821518407694850957}
   - component: {fileID: 910091262}
+  - component: {fileID: 8545524996609610574}
   m_Layer: 8
   m_Name: Blocker
   m_TagString: Untagged
@@ -110,6 +111,18 @@ MonoBehaviour:
   health: 1200
   deathVFX: {fileID: 7105195559572412855, guid: 4f64bbbb66b383a4fb4a90566671b418, type: 3}
   VFXDuration: 4
+--- !u!114 &8545524996609610574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3187852016522150184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c14afcfafc23833448b00f42b8500d23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8540771707296298993
 GameObject:
   m_ObjectHideFlags: 0
