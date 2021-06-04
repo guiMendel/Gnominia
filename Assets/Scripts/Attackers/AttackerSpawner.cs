@@ -11,7 +11,7 @@ public class AttackerSpawner : MonoBehaviour
   [SerializeField] float maxSpawnTime = 8f;
 
   // The enemy to be spawned
-  [SerializeField] Attacker attackerPrefab;
+  [SerializeField] Attacker[] attackerPrefabs;
 
   bool spawning = true;
 
@@ -45,7 +45,10 @@ public class AttackerSpawner : MonoBehaviour
   {
     // Get a lane
     Transform lane = GetRandomLane();
-    
+
+    // Get an attacker's prefab
+    Attacker attackerPrefab = GetRandomAttackerPrefab();
+
     // Create attacker
     Attacker attacker = Instantiate(
       attackerPrefab,
@@ -55,6 +58,11 @@ public class AttackerSpawner : MonoBehaviour
 
     // Set it's parent
     attacker.transform.parent = lane;
+  }
+
+  private Attacker GetRandomAttackerPrefab()
+  {
+    return attackerPrefabs[Random.Range(0, attackerPrefabs.Length)];
   }
 
   private Transform GetRandomLane()
