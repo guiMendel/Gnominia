@@ -12,7 +12,7 @@ public class Health : MonoBehaviour
   // List of observers of this character's death
   List<Action> deathObservers;
 
-  private void Start() {
+  private void Awake() {
     deathObservers = new List<Action>();
   }
 

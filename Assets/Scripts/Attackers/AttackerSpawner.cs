@@ -13,7 +13,15 @@ public class AttackerSpawner : MonoBehaviour
   // The enemy to be spawned
   [SerializeField] Attacker[] attackerPrefabs;
 
+  // state
   bool spawning = true;
+  int numberOfEnemies = 0;
+
+  // INTERFACE
+
+  public void StopSpawning() { spawning = false; }
+
+  public int GetNumberOfEnemies() { return numberOfEnemies; }
 
   // Start is called before the first frame update
   void Start()
@@ -58,6 +66,12 @@ public class AttackerSpawner : MonoBehaviour
 
     // Set it's parent
     attacker.transform.parent = lane;
+
+    // Count this enemy
+    numberOfEnemies++;
+
+    // Listen for it's death to discount it
+    attacker.GetComponent<Health>().OnDeath(() => numberOfEnemies--);
   }
 
   private Attacker GetRandomAttackerPrefab()
