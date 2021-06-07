@@ -12,6 +12,9 @@ public class GameTimer : MonoBehaviour
   // state
   List<Action> timeoutObservers;
 
+  // stored refs
+  Slider slider;
+
   // INTERFACE
 
   public void OnTimeout(Action action) { timeoutObservers.Add(action); }
@@ -23,19 +26,23 @@ public class GameTimer : MonoBehaviour
 
   private void Start()
   {
-    StartCoroutine(CountTime());
+    slider = GetComponent<Slider>();
+    slider.value = 0;
   }
 
-  IEnumerator CountTime()
+  public IEnumerator CountTime()
   {
     bool active = true;
+    float startTime = Time.timeSinceLevelLoad;
 
     while (active)
     {
-      GetComponent<Slider>().value = Time.timeSinceLevelLoad / levelDuration;
+      float currentTime = Time.timeSinceLevelLoad - startTime;
+
+      slider.value = currentTime / levelDuration;
 
       // Check if timer is up
-      if (Time.timeSinceLevelLoad >= levelDuration)
+      if (currentTime >= levelDuration)
       {
         active = false;
         AlertTimeoutObservers();

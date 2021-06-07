@@ -827,5 +827,9 @@ PrefabInstance:
       propertyPath: loadingTime
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5303425486459460287, guid: 328df8629a41da84b8f0d0f75b10446d, type: 3}
+      propertyPath: loadStartMenu
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 328df8629a41da84b8f0d0f75b10446d, type: 3}

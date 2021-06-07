@@ -6,7 +6,6 @@ using UnityEngine;
 public class AttackerSpawner : MonoBehaviour
 {
   // Amount of time the player has before plants start spawning
-  [SerializeField] float startingSlack = 4f;
   [SerializeField] float minSpawnTime = 3f;
   [SerializeField] float maxSpawnTime = 8f;
 
@@ -23,17 +22,8 @@ public class AttackerSpawner : MonoBehaviour
 
   public int GetNumberOfEnemies() { return numberOfEnemies; }
 
-  // Start is called before the first frame update
-  void Start()
+  public IEnumerator SpawnEnemies()
   {
-    StartCoroutine(SpawnEnemies());
-  }
-
-  IEnumerator SpawnEnemies()
-  {
-    // Wait initial slack
-    yield return new WaitForSeconds(startingSlack);
-
     while (spawning)
     {
       // Wait for next spawn
