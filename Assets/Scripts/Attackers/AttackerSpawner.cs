@@ -9,6 +9,8 @@ public class AttackerSpawner : MonoBehaviour
   [SerializeField] float minSpawnTime = 3f;
   [SerializeField] float maxSpawnTime = 8f;
 
+  [SerializeField] float spawnDifficultyScale = 0.3f;
+
   // The enemy to be spawned
   [SerializeField] Attacker[] attackerPrefabs;
 
@@ -31,6 +33,12 @@ public class AttackerSpawner : MonoBehaviour
 
       Spawn();
     }
+  }
+
+  private void Start() {
+    minSpawnTime /= PlayerPrefsController.GetDownscaledDifficulty(spawnDifficultyScale);
+    maxSpawnTime /= PlayerPrefsController.GetDownscaledDifficulty(spawnDifficultyScale);
+    print((minSpawnTime, maxSpawnTime));
   }
 
   // Returns the amount of seconds to wait until the next spawn

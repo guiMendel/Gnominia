@@ -34,6 +34,9 @@ public class LevelController : MonoBehaviour
     // Observe attacker collision with base
     FindObjectOfType<BaseCollider>().OnCollide(AttackerCollision);
 
+    // Adjust to difficulty
+    healthPoints = (int) Mathf.Floor(healthPoints / PlayerPrefsController.GetDifficulty());
+
     StartCoroutine(StartSpawning());
   }
 

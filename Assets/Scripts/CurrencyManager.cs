@@ -7,6 +7,7 @@ using System;
 public class CurrencyManager : MonoBehaviour
 {
   [SerializeField] int count = 3;
+  [SerializeField] int easyModeBonus = 2;
   TextMeshProUGUI textComponent;
 
   // Start is called before the first frame update
@@ -14,6 +15,9 @@ public class CurrencyManager : MonoBehaviour
   {
     textComponent = GetComponent<TextMeshProUGUI>();
     UpdateText();
+
+    // If on easy mode, start with more currency
+    if (PlayerPrefsController.GetDifficulty() < 1f) count += easyModeBonus;
   }
 
   private void UpdateText()

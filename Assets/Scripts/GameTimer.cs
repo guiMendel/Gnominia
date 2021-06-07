@@ -8,6 +8,7 @@ public class GameTimer : MonoBehaviour
 {
   [Tooltip("Time in seconds this level takes to complete")]
   [SerializeField] float levelDuration = 60f;
+  [SerializeField] float difficultyScale = 0.5f;
 
   // state
   List<Action> timeoutObservers;
@@ -28,6 +29,10 @@ public class GameTimer : MonoBehaviour
   {
     slider = GetComponent<Slider>();
     slider.value = 0;
+
+    // Adjust to difficulty
+    levelDuration *= PlayerPrefsController.GetDownscaledDifficulty(difficultyScale);
+    print(levelDuration);
   }
 
   public IEnumerator CountTime()
