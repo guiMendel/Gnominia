@@ -8,16 +8,16 @@ public class HealthDisplay : MonoBehaviour
   TextMeshProUGUI textMesh;
 
   // stored refs
-  BaseCollider baseCollider;
+  LevelController levelController;
 
   private void Start()
   {
     textMesh = GetComponent<TextMeshProUGUI>();
-    baseCollider = FindObjectOfType<BaseCollider>();
+    levelController = FindObjectOfType<LevelController>();
   }
 
   private void Update()
   {
-    textMesh.text = baseCollider.GetHealthPoints().ToString();
+    textMesh.text = levelController.GetHealthPoints().ToString();
   }
 }

@@ -12,17 +12,19 @@ public class LevelLoader : MonoBehaviour
   // Start is called before the first frame update
   void Start()
   {
-    if (loadStartMenu) StartCoroutine(LoadStartMenu());
+    if (loadStartMenu) StartCoroutine(WaitAndLoadStartMenu());
   }
 
   // Waits 3 seconds and then loads start menu
-  IEnumerator LoadStartMenu()
+  IEnumerator WaitAndLoadStartMenu()
   {
     yield return new WaitForSeconds(loadingTime);
 
-    SceneManager.LoadScene(1);
+    LoadStartMenu();
   }
 
   public void NextLevel() { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); }
+  public void LoadStartMenu() { SceneManager.LoadScene("Start Screen"); }
+  public void LoadOptionsMenu() { SceneManager.LoadScene("Options Screen"); }
   public void Exit() { Application.Quit(); }
 }

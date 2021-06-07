@@ -6,28 +6,41 @@ using UnityEngine.SceneManagement;
 
 public class BaseCollider : MonoBehaviour
 {
-  [SerializeField] int healthPoints = 3;
+  List<Action<Attacker>> collisionObservers;
 
-  public int GetHealthPoints() { return healthPoints; }
+  private void Awake() {
+    collisionObservers = new List<Action<Attacker>>();
+  }
+
+  public void OnCollide(Action<Attacker> action) { collisionObservers.Add(action); }
+
+  void AlertObservers(Attacker attacker)
+  {
+    foreach (var observerAction in collisionObservers)
+    {
+      try
+      {
+        observerAction(attacker);
+      }
+      // If observer is dead, dont bother
+      catch (MissingReferenceException)
+      {
+        Debug.Log("Omae wa, mou shindeiru");
+        continue;
+      }
+    }
+  }
 
   private void OnTriggerEnter2D(Collider2D other)
   {
     // Check if it's an attacker
-    if (other.GetComponent<Attacker>())
+    Attacker attacker = other.GetComponent<Attacker>();
+    if (attacker)
     {
-      // Take damage
-      healthPoints -= 1;
-
-      if (healthPoints <= 0) LoseGame();
+      AlertObservers(attacker);
     }
 
     // Detroy the object
     Destroy(other.gameObject);
-  }
-
-  // Go back to first scene after loading screen
-  private void LoseGame()
-  {
-    SceneManager.LoadScene(1);
   }
 }

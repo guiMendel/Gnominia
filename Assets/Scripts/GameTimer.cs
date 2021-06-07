@@ -65,7 +65,7 @@ public class GameTimer : MonoBehaviour
       // If observer is dead, dont bother
       catch (MissingReferenceException)
       {
-        print("Omae wa mou, shindeiru");
+        print("Omae wa, mou shindeiru");
         continue;
       }
     }

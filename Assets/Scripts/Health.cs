@@ -50,7 +50,7 @@ public class Health : MonoBehaviour
       }
       // If observer is dead, dont bother
       catch (MissingReferenceException) {
-        Debug.Log("Omae wa mou, shindeiru");
+        Debug.Log("Omae wa, mou shindeiru");
         continue;
       }
     }
